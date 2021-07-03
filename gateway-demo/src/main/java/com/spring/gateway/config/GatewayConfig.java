@@ -10,7 +10,7 @@ import reactor.core.publisher.Mono;
  * @author liucaiwen
  * @date 2021/7/3
  */
-@Configuration
+//@Configuration
 public class GatewayConfig {
 
     @Bean
