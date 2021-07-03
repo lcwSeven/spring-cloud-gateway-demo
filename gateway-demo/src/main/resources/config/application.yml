@@ -1,0 +1,15 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: gateway-demo
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      routes:
+        - id: product-service
+          uri: lb://product-service
+          predicates:
+            - Path=/product-service/**
