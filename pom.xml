@@ -11,6 +11,7 @@
     <modules>
         <module>gateway-demo</module>
         <module>product-service</module>
+        <module>order-service</module>
     </modules>
 
 
