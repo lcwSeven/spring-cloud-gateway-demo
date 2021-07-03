@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
     @RequestMapping("/product/{id}")
-    public String queryProduct(@PathVariable("id")String id){
-        return "获取商品:"+id;
+    public String queryProduct(@PathVariable("id") String id) {
+        System.out.println("查询产品id=" + id);
+        return "获取商品:" + id;
     }
 }
