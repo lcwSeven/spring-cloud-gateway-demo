@@ -1,0 +1,18 @@
+server:
+  port: 7200
+  servlet:
+    context-path: /sentinel-demo
+spring:
+  application:
+    name: sentinel-demo
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:9000
+      datasource:
+        ds:
+          nacos:
+            serverAddr: localhost:8848
+            dataId: ${spring.application.name}
+            groupId: DEFAULT_GROUP
+            ruleType: flow

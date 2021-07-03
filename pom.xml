@@ -12,6 +12,7 @@
         <module>gateway-demo</module>
         <module>product-service</module>
         <module>order-service</module>
+        <module>sentinel-demo</module>
     </modules>
 
 
